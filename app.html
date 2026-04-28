@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photography</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="">
+    <nav>
+      <div>
+        <div class="logo">
+          <img src="image/logo.png" alt="Logo" />
+        </div>
+
+        <div class="nav-links">
+          <ul>
+            <li><a href="landscape.html">Landscape</a></li>
+            <li><a href="dogform.html">Skies</a></li>
+            <li><a href="hamsterform.html">Potraits</a></li>
+          </ul>
+        </div>
+        <div class="submit-div">
+          <!-- <input type="file" id="fileInput" /> -->
+          <button id="myBtn" class="submit-button" type="button">Submit</button>
+        </div>
+      </div>
+    </nav>
+
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 class="modal-header">Upload your photo.</h2>
+        <div>
+          <textarea
+            id="myTextarea"
+            class="textarea"
+            rows="4"
+            cols="50"
+            placeholder="Write your thoughts here..."
+          ></textarea
+          ><br /><br />
+        </div>
+        <label for="fileInput">Choose an image:</label>
+        <input
+          type="file"
+          id="fileInput"
+          accept="image/*"
+          onchange="previewImage(event)"
+        />
+        <div class="preview-image-div">
+          <img id="preview" class="preview-image" style="display: none" />
+        </div>
+
+        <button id="submitBtn" class="submit-button" type="button">
+          Submit
+        </button>
+      </div>
+    </div>
+    <section>
+      <div class="hero">
+        <div class="hero1">
+          <p>
+            <span class="highlight">In every frame</span>,<br />
+            a silent story learns to speak.
+          </p>
+        </div>
+        <div class="hero2">
+          <!-- <img src="image/hero.jpg" alt="Hero Image" /> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="featured">
+      <h2 class="featured-title">Featured Shots</h2>
+
+      <div class="featured-grid">
+        <div class="featured-item">
+          <img src="image/f1.jpg" alt="Landscape" />
+          <p href="landscape.html">Landscape</p>
+        </div>
+
+        <div class="featured-item">
+          <img src="image/f2.jpg" alt="Skies" />
+          <p>Skies</p>
+        </div>
+
+        <div class="featured-item">
+          <img src="image/f3.jpg" alt="Portraits" />
+          <p>Portraits</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured">
+      <h2 class="featured-title">Featured Shots</h2>
+
+      <div class="featured-grid">
+        <div class="featured-item">
+          <img src="image/f1.jpg" alt="Landscape" />
+          <p href="landscape.html">Landscape</p>
+        </div>
+
+        <div class="featured-item">
+          <img src="image/f2.jpg" alt="Skies" />
+          <p>Skies</p>
+        </div>
+
+        <div class="featured-item">
+          <img src="image/f3.jpg" alt="Portraits" />
+          <p>Portraits</p>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer section-->
+    <footer class="footer">
+      <div class="footer-content">
+        <!-- LEFT -->
+        <div class="footer-left">
+          <img class="footer-logo" src="image/logo.png" alt="Logo" />
+          <h3>Photography</h3>
+          <p>Capturing moments that last forever.</p>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="footer-right">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom line -->
+      <p class="copyright">© 2026 Photography. All rights reserved.</p>
+    </footer>
+
+    <script src="file.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </body>
+</html>
