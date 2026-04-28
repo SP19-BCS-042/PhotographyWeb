@@ -1,0 +1,374 @@
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+nav div {
+  display: flex;
+  justify-content: left;
+  background-color: #703636;
+  width: 100%;
+  height: 50px;
+  padding-right: 10px;
+  padding-left: 10px;
+  position: relative;
+  z-index: 10;
+}
+
+nav div ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #703636;
+  display: flex;
+  justify-content: center;
+}
+
+nav div ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav div ul li a:hover {
+  background-color: #111111;
+}
+
+nav div div button:hover {
+  background-color: #6e1e1e;
+}
+
+.submit-button {
+  background-color: #291818;
+  width: 100px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 7px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+
+  inset: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  border: 1px solid #888;
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+
+  width: 320px; /* 👈 reduced size */
+  max-width: 90%; /* responsive */
+  padding: 10px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 20spx;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #2e532e;
+  color: white;
+  text-align: center;
+  border-radius: 10px 10px 10px 10px;
+  padding: 10px;
+}
+
+.modal-body {
+  padding: 2px 16px;
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #b6b6b6;
+  font-size: 16px;
+  resize: none;
+
+  height: 150px;
+}
+
+.preview-image-div {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.preview-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  max-height: 400px;
+  min-height: 400px;
+  background-color: #5a5a5a;
+  background-image: url("image/hero.jpg");
+
+  background-size: cover; /* 👈 fills entire area */
+  background-position: center; /* 👈 keeps image centered */
+  background-repeat: no-repeat;
+}
+
+.hero1 {
+  flex: 1;
+  color: white;
+  text-align: left;
+  padding: 100px;
+  position: absolute;
+
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  letter-spacing: 1px;
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+.hero1 p {
+  font-family: "Playfair Display", serif;
+  font-size: 42px;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  line-height: 1.4;
+}
+
+.highlight {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  color: #f5a742; /* optional highlight color */
+}
+
+/* .hero2 {
+  flex: 1;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  height: 200px;
+  max-height: 200px;
+  min-height: 200px;
+} */
+
+/* Footer container */
+.footer {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 30px 40px;
+}
+
+/* Row layout */
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* 👈 pushes left & right apart */
+  align-items: center;
+}
+
+/* LEFT SIDE */
+.footer-left {
+  max-width: 300px;
+}
+
+.footer-logo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.footer-left h3 {
+  margin: 5px 0;
+  font-family: "Playfair Display", serif;
+}
+
+.footer-left p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* RIGHT SIDE */
+.footer-right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-right li {
+  margin-bottom: 8px;
+}
+
+.footer-right a {
+  text-decoration: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s;
+}
+
+.footer-right a:hover {
+  color: #f5c542;
+}
+
+/* Bottom copyright */
+.footer .copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+.feature-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  align-items: center;
+  align-content: center;
+}
+
+.featured {
+  padding: 60px 20px;
+  text-align: center;
+  background: #d8d8d8;
+  color: rgb(0, 0, 0);
+}
+
+.featured-title {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+/* Grid layout */
+.featured-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Each image card */
+.featured-item {
+  width: 300px;
+  transition: transform 0.3s;
+}
+
+.featured-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Hover effect */
+.featured-item:hover {
+  transform: scale(1.05);
+}
+
+.featured-item p {
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.landscape-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  max-height: 400px;
+  min-height: 400px;
+  background-color: #5a5a5a;
+  background-image: url("image/landscape.jpg");
+
+  background-size: cover; /* 👈 fills entire area */
+  background-position: center; /* 👈 keeps image centered */
+  background-repeat: no-repeat;
+}
